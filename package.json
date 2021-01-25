@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Bretbret18/Portfolio-Generator.git"
+    "url": "git+https://github.com/lernantino/Portfolio-Generator.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Bretbret18/Portfolio-Generator/issues"
+    "url": "https://github.com/lernantino/Portfolio-Generator/issues"
   },
-  "homepage": "https://github.com/Bretbret18/Portfolio-Generator#readme",
+  "homepage": "https://github.com/lernantino/Portfolio-Generator#readme",
   "dependencies": {
     "inquirer": "^7.3.3"
   }
