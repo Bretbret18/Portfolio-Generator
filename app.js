@@ -1,4 +1,4 @@
-const fs = require('fs');
+const { writeFile, copyFile } = require('./utils/generate-site.js');
 const generatePage = require('./src/page-template.js');
 const inquirer = require('inquirer');
 
@@ -176,16 +176,30 @@ const mockData = {
 
 
 
-// Comment Out until the final product //
-// promptUser()
-//  .then(promptProject)
- // .then(portfolioData => {
-    const pageHTML = generatePage(mockData); // change back to (portfolioData) at end! //
-
-     fs.writeFile('./index.html', pageHTML, err => {
+// Took fs. out of certain parts of promise 9.5.6 //
+ promptUser()
+  .then(promptProject)
+  .then(portfolioData => {
+  return generatePage(portfolioData);
+  })
+  .then(pageHTML => {
+      return fs.writeFile(pageHTML);
+  })
+  .then(writeFileResponse => {
+      console.log(writeFileResponse);
+      return fs.copyFile();
+  })
+  .then(copyFileResponse => {
+      console.log(copyFileResponse);
+  })
+  .catch(err => {
+      console.log(err);
+  });
+     // , pageHTML, err => {
     //   if (err) throw new Error(err);
 
-    //    console.log('Page created! Check out index.html in this directory to see it!');
-      });
+        // Does console.log stay? //
+        console.log('Page created! Check out index.html in this directory to see it!');
+      
   
-    
+  
