@@ -1,5 +1,6 @@
 # Portfolio-Generator
-Compare with CompareCode5 from Portfolio-Generator Compare Code folder
-1.Delete index.html and then make sure app works for final push to github
-2. Create a solid README for this application before Pushing!
-"Refer to the Professional README Guide that you received from your instructor in your virtual classes during Module 1 for instruction on writing a good README for your app!"
+
+This is a portfolio generator application. The user is prompted to fill out
+a questionare related to coding projects that the user has created. Upon filling
+out the entire questionare, an HTML page will be created that displays the answers
+the user provided to create the application. Using JavaScript along with Node, the user will now have a portfolio HTML page that uses Bootsrap CSS design! In order to use this application, the user cannot go to Github pages to find a deployed site. Instead, the user must clone this code to their machine and run node + the index.html file path in order to start the questionare and create their portfolio page.
