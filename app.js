@@ -183,11 +183,11 @@ const mockData = {
   return generatePage(portfolioData);
   })
   .then(pageHTML => {
-      return fs.writeFile(pageHTML);
+      return writeFile(pageHTML);
   })
   .then(writeFileResponse => {
       console.log(writeFileResponse);
-      return fs.copyFile();
+      return copyFile();
   })
   .then(copyFileResponse => {
       console.log(copyFileResponse);
